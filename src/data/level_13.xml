@@ -1,0 +1,80 @@
+﻿ <level>
+	<!-- общее -->
+	<won_time>45</won_time>	
+	<colors>6</colors>	
+	<background_class_name>level_suburb_04_mc</background_class_name>
+	<frozen_time>4</frozen_time>  <!-- время заморозки в секундах (Number) -->
+	<use_debug_view>0</use_debug_view>
+	<plane_button_time>18</plane_button_time> <!-- время перезарядки кнопки -->
+
+	<!-- описание сетки -->
+	<wave_velocity>8</wave_velocity>
+	<rows_num>10</rows_num>
+	<columns_num>11</columns_num>
+	<rows_showed>3</rows_showed>	
+	<zombie>0</zombie>
+	
+	<!-- радиус шара-->
+	<mesh_bubble_diametr>44</mesh_bubble_diametr>
+	<mesh_offset>11</mesh_offset>
+	
+	<!-- описание стен -->
+	<use_walls>1</use_walls>                <!-- используются/не используются стены (1, 0) -->
+	<left_wall_edge>70</left_wall_edge> 	<!-- правый край x левой стены -->
+	<right_wall_edge>592</right_wall_edge>  <!-- левый край x правой стены -->
+	
+	<!-- описание снарядов для пушки -->
+	<super_bullet_percent>20</super_bullet_percent>
+	<bomb_percent>0</bomb_percent>
+	<freeze_bomb_percent>55</freeze_bomb_percent>
+	<color_bomb_percent>45</color_bomb_percent> 
+	
+	<!-- описание системы очков -->
+	<basic_scores>5</basic_scores>
+	<basic_combo_bonus>7</basic_combo_bonus>
+		<uber_scores>6</uber_scores>
+    <steam_scores>9</steam_scores>
+	
+	<!-- описание массивов для префабов -->
+	<Arrays>
+		<Array>
+		   <dot position="1_-1" /> <!-- di_dj -->
+		   <dot position="0_-2" />
+		   <dot position="2_-1" />
+	    </Array>
+	  	<Array>
+		   <dot position="2_-1" />
+		   <dot position="-1_-2" />
+		   <dot position="0_-1" />
+	  	</Array>
+	</Arrays>
+ 
+  <!-- шаблоны префабов -->
+  <Patterns random="true"> <!-- флаг "random = true" означает, что тег <pattern>  будет выбираться  случайным  образом -->
+  	<pattern firstMaxIndex="6"  prefabTypes = "0_1" probability = "0.0_0.0"  count = "2"  minDistance = "1"  canOverlay = "1" />
+  	<pattern firstMaxIndex="5" prefabTypes = "0_1" probability = "0.0_0.0"  count = "1"  minDistance = "1"  canOverlay = "1" />
+    <pattern firstMaxIndex="7" prefabTypes = "0" probability = "0.0"  count = "3"  minDistance = "1"  canOverlay = "0" />
+    <pattern firstMaxIndex="2" prefabTypes = "1" probability = "0.0"  count = "1"  minDistance = "1"  canOverlay = "0" /> 
+  </Patterns>
+  
+  <!-- описание высказываний зомби -->
+  <Pop_ups spawnPeriod="8" maxTimeOffset="2" lifeTime="3" probability="0.7">
+  	<Pop_up>They killed Kenny!!!_Evil people!</Pop_up>
+  	<Pop_up>Heeeey!_Yeah?</Pop_up>
+  	<Pop_up>Arrrr!_Brains!!!</Pop_up>
+	<Pop_up>Zombo! I'm your brother!!!_Nooooooo!</Pop_up>
+	<Pop_up>I wanna eat!_Yep!</Pop_up>
+	<Pop_up>I'm hungry!_Yep!</Pop_up>
+	<Pop_up>I'm hungry!</Pop_up>
+	<Pop_up>Omg!</Pop_up>
+	<Pop_up>Eat them all!</Pop_up>
+	<Pop_up>Not again!</Pop_up>
+	<Pop_up>Not me!</Pop_up>
+	<Pop_up>GO GO GO!</Pop_up>
+	<Pop_up>Ouch!</Pop_up>
+	<Pop_up>Where we go?_I don't know!</Pop_up>
+	 
+	<Pop_up>2+2?_42!</Pop_up>
+  </Pop_ups>
+  
+</level>
